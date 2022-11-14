@@ -1,0 +1,28 @@
+{
+    "films": [
+        {
+            "id": 1,
+            "name": "Deadpool",
+            "category": "Ação/Aventura",
+            "year": 2016
+        },
+        {
+            "id": 2,
+            "name": "Como Eu Era Antes de Você",
+            "category": "Romance/Drama",
+            "year": 2016
+        },
+        {
+            "id": 3,
+            "name": "Gente Grande",
+            "category": "Comédia",
+            "year": 2010
+        },
+        {
+            "id": 4,
+            "name": "Os Vingadore",
+            "category": "Ação/Aventura",
+            "year": 2012
+        }
+    ]
+}

@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './views/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material/card';
 import { FormsComponent } from './views/forms/forms.component';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatButtonModule } from '@angular/material/button';
+import { MaterialModule } from './shared/material/material.module';
+import { CalcNotaComponent } from './views/calc-nota/calc-nota.component';
+import { FilmsListComponent } from './views/films-list/films-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,18 +20,18 @@ import { MatButtonModule } from '@angular/material/button';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    FormsComponent
+    FormsComponent,
+    CalcNotaComponent,
+    FilmsListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
     FormsModule,
-    MatCardModule,
-    MatMenuModule,
-    MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
