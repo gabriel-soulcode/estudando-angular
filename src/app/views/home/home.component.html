@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<!-- One Way Data Binding -->
+<!--Interoplation-->
+<h1>Bem-vindo(a), {{user}}!</h1>
+<!--Property Binding-->
+<img [src]="image.source" [alt]="image.alternative"><br>
+<!--Event Binding-->
+<button (click)="clicar()">Clique aqui</button><br>
+<!-- Two Way Data Binding -->
+<input type="text" placeholder="Digite seu nome" [(ngModel)]="user">
+
+<app-footer></app-footer>
