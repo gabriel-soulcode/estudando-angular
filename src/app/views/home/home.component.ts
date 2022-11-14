@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+      this.objStyle['color'] = "blue";
+    }, 3000);
+  }
 
   public user: string = "Gabriel Braga";
 
@@ -20,4 +24,35 @@ export class HomeComponent {
     alert("Clicou!");
   }
 
+  public objStyle: any = {
+    'font-size': '50px',
+    'color': 'red'
+  }
+
+  public isError: boolean = false;
+  public classCor: string = "pink";
+
+  public sapinho: boolean = true;
+  public mudarSapinho(): void {
+    this.sapinho = !this.sapinho;
+  }
+
+  public peixes: string[] = [
+    "tubarão",
+    "polvo",
+    "peixe palhaço",
+    "baiacu",
+    "cavalo-marinho",
+    "lula",
+    "carpa"
+  ];
+
+  public textoPipe: string = "Texto de Exemplo (pipe)";
+  public numberPipe: number = 30.3334;
+  public nowPipe = new Date();
+  public objProfPipe = {
+    nome: "Gabriel Braga",
+    idade: 20,
+    area: "Tecnologia"
+  }
 }
